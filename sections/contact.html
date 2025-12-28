@@ -1,0 +1,90 @@
+<!-- 
+Portfolio Contact Section Template
+Designed by Mario John Santiano
+Template: Split Layout with Contact Form & Info Cards
+-->
+<div class="w-full max-w-[1200px] mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
+        <!-- Left Column: Info & Context -->
+        <div class="lg:col-span-5 flex flex-col justify-start pt-4">
+            <div class="mb-8">
+                <span class="inline-block py-1 px-3 rounded-full bg-primary/20 text-primary text-xs font-bold uppercase tracking-wider mb-4 border border-primary/30">
+                    Contact
+                </span>
+                <h1 class="text-slate-900 dark:text-white text-4xl md:text-5xl font-bold leading-tight tracking-[-0.02em] mb-6">
+                    Let's Connect
+                </h1>
+                <p class="text-slate-600 dark:text-text-muted text-lg font-normal leading-relaxed">
+                    I'm currently open to internship opportunities and open-source collaborations. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                </p>
+            </div>
+            <!-- Info Card -->
+            <div class="bg-slate-50 dark:bg-surface-dark border border-slate-200 dark:border-border-dark rounded-xl p-6 md:p-8 space-y-6 shadow-xl shadow-black/5 dark:shadow-black/20">
+                <!-- Email -->
+                <div class="flex items-start gap-4">
+                    <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+                        <span class="material-symbols-outlined">mail</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-sm text-slate-600 dark:text-text-muted font-medium">Email</span>
+                        <a class="text-slate-900 dark:text-white text-base font-semibold hover:text-primary transition-colors break-all" href="mailto:santiano2200383@ceu.edu.ph">santiano2200383@ceu.edu.ph</a>
+                    </div>
+                </div>
+                <!-- Location -->
+                <div class="flex items-start gap-4">
+                    <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+                        <span class="material-symbols-outlined">location_on</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-sm text-slate-600 dark:text-text-muted font-medium">Location</span>
+                        <span class="text-slate-900 dark:text-white text-base font-semibold">Caloocan City, Philippines</span>
+                    </div>
+                </div>
+                <!-- Social Links -->
+                <div class="pt-4 border-t border-slate-200 dark:border-border-dark mt-2">
+                    <span class="text-sm text-slate-600 dark:text-text-muted font-medium block mb-4">Social Profiles</span>
+                    <div class="flex items-center gap-3">
+                        <a aria-label="GitHub" class="h-12 w-12 flex items-center justify-center rounded-lg bg-slate-200 dark:bg-[#1a1122] border border-slate-300 dark:border-border-dark text-slate-900 dark:text-white hover:bg-primary hover:border-primary hover:text-white transition-all group" href="https://github.com/supremomj" target="_blank" rel="noopener noreferrer">
+                            <span class="material-symbols-outlined group-hover:scale-110 transition-transform">code</span>
+                        </a>
+                        <a aria-label="LinkedIn" class="h-12 w-12 flex items-center justify-center rounded-lg bg-slate-200 dark:bg-[#1a1122] border border-slate-300 dark:border-border-dark text-slate-900 dark:text-white hover:bg-primary hover:border-primary hover:text-white transition-all group" href="https://www.linkedin.com/in/mario-john-santiano-3189b32b1/" target="_blank" rel="noopener noreferrer">
+                            <span class="material-symbols-outlined group-hover:scale-110 transition-transform">work</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Right Column: Form -->
+        <div class="lg:col-span-7 bg-slate-50 dark:bg-surface-dark/50 border border-slate-200 dark:border-border-dark rounded-2xl p-6 md:p-10 relative overflow-hidden backdrop-blur-sm">
+            <!-- Decorative glow -->
+            <div class="absolute -top-20 -right-20 w-64 h-64 bg-primary/20 rounded-full blur-[80px] pointer-events-none"></div>
+            <form class="flex flex-col gap-6 relative z-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <label class="flex flex-col gap-2">
+                        <span class="text-slate-900 dark:text-white text-sm font-medium">Your Name</span>
+                        <input class="w-full rounded-xl bg-white dark:bg-background-dark border border-slate-200 dark:border-border-dark text-slate-900 dark:text-white focus:border-primary focus:ring-1 focus:ring-primary placeholder:text-slate-400 dark:placeholder:text-text-muted/50 h-12 px-4 transition-all" placeholder="John Doe" type="text" required/>
+                    </label>
+                    <label class="flex flex-col gap-2">
+                        <span class="text-slate-900 dark:text-white text-sm font-medium">Your Email</span>
+                        <input class="w-full rounded-xl bg-white dark:bg-background-dark border border-slate-200 dark:border-border-dark text-slate-900 dark:text-white focus:border-primary focus:ring-1 focus:ring-primary placeholder:text-slate-400 dark:placeholder:text-text-muted/50 h-12 px-4 transition-all" placeholder="john@example.com" type="email" required/>
+                    </label>
+                </div>
+                <label class="flex flex-col gap-2">
+                    <span class="text-slate-900 dark:text-white text-sm font-medium">Subject</span>
+                    <input class="w-full rounded-xl bg-white dark:bg-background-dark border border-slate-200 dark:border-border-dark text-slate-900 dark:text-white focus:border-primary focus:ring-1 focus:ring-primary placeholder:text-slate-400 dark:placeholder:text-text-muted/50 h-12 px-4 transition-all" placeholder="Project Inquiry" type="text" required/>
+                </label>
+                <label class="flex flex-col gap-2">
+                    <span class="text-slate-900 dark:text-white text-sm font-medium">Message</span>
+                    <textarea class="w-full rounded-xl bg-white dark:bg-background-dark border border-slate-200 dark:border-border-dark text-slate-900 dark:text-white focus:border-primary focus:ring-1 focus:ring-primary placeholder:text-slate-400 dark:placeholder:text-text-muted/50 min-h-[160px] p-4 resize-y transition-all" placeholder="Hi there, I'd like to discuss..." required></textarea>
+                </label>
+                <div class="pt-2">
+                    <button class="group relative w-full md:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-8 py-3.5 text-sm font-bold text-white transition-all hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-dark" type="submit">
+                        <span>Send Message</span>
+                        <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">send</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

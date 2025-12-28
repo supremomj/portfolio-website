@@ -1,0 +1,139 @@
+/* Custom scrollbar for webkit */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #191022;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #362348;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7f13ec;
+}
+
+/* Typewriter cursor animation */
+.typewriter-cursor::after {
+    content: '|';
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* Gradient text */
+.gradient-text {
+    background: linear-gradient(to right, #ffffff, #d8b4fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Card hover effects */
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Image overlay */
+.image-overlay {
+    background: linear-gradient(to top, rgba(25, 16, 34, 0.95), rgba(25, 16, 34, 0.2));
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Selection styling */
+::selection {
+    background-color: #7f13ec;
+    color: white;
+}
+
+/* Hide scrollbar for specific elements */
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* Subtle bounce animation for compiled successfully badge */
+@keyframes subtle-bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Project card animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* Project card hover effects */
+.project-card {
+    animation: fadeInUp 0.6s ease-out both;
+}
+
+.project-card:hover .material-symbols-outlined {
+    transform: scale(1.1);
+}
+
+/* Filter button active state */
+.filter-btn.active {
+    box-shadow: 0 0 20px rgba(127, 19, 236, 0.4);
+    transform: scale(1.05);
+}
+
+/* Project card image overlay on hover */
+.project-card:hover .absolute.inset-0.bg-gradient-to-t {
+    opacity: 0.4 !important;
+    transition: opacity 0.3s ease;
+}
+
+/* Smooth transitions for project cards */
+.project-card {
+    will-change: transform, opacity;
+}
+
+/* Project card focus state for accessibility */
+.project-card:focus {
+    outline: 2px solid #7f13ec;
+    outline-offset: 4px;
+}
+
+/* Enhanced hover effects for tech tags */
+.project-card .px-2\\.5:hover {
+    transform: translateY(-2px);
+}
+
+/* Smooth image zoom on card hover */
+.project-card:hover img,
+.project-card:hover [style*="background-image"] {
+    transform: scale(1.1) !important;
+}
+

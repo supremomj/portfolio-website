@@ -1,0 +1,183 @@
+<!-- 
+Portfolio Projects Section Template
+Designed by Mario John Santiano
+Template: Modern Projects Gallery with Filter
+-->
+<div class="w-full max-w-[1200px] mx-auto">
+    <!-- Section Header -->
+    <div class="mb-8">
+        <h1 class="text-slate-900 dark:text-white text-4xl md:text-5xl font-bold leading-tight tracking-[-0.02em] mb-4">Featured Projects</h1>
+        <p class="text-slate-600 dark:text-gray-300 text-lg font-normal leading-normal max-w-2xl">
+            A curated selection of code, experiments, and full-stack applications showcasing technical depth and creative problem solving.
+        </p>
+        <div class="mt-4 text-sm text-slate-500 dark:text-gray-400">
+            <span id="project-count">5</span> projects available
+        </div>
+    </div>
+    <!-- Filters -->
+    <div class="flex gap-3 mb-10 overflow-x-auto pb-2 scrollbar-hide" id="project-filters">
+        <button class="filter-btn active flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary text-white px-5 transition-all duration-300 active:scale-95 hover:shadow-[0_0_15px_rgba(127,19,236,0.4)] hover:scale-105" data-filter="all">
+            <p class="text-sm font-bold leading-normal">All</p>
+        </button>
+        <button class="filter-btn flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-slate-200 dark:bg-card-border hover:bg-slate-300 dark:hover:bg-primary/20 text-slate-900 dark:text-white px-5 transition-all duration-300 active:scale-95 hover:scale-105 border border-slate-300 dark:border-transparent" data-filter="web">
+            <p class="text-sm font-medium leading-normal">Web Development</p>
+        </button>
+        <button class="filter-btn flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-slate-200 dark:bg-card-border hover:bg-slate-300 dark:hover:bg-primary/20 text-slate-900 dark:text-white px-5 transition-all duration-300 active:scale-95 hover:scale-105 border border-slate-300 dark:border-transparent" data-filter="ai">
+            <p class="text-sm font-medium leading-normal">AI/ML</p>
+        </button>
+        <button class="filter-btn flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-slate-200 dark:bg-card-border hover:bg-slate-300 dark:hover:bg-primary/20 text-slate-900 dark:text-white px-5 transition-all duration-300 active:scale-95 hover:scale-105 border border-slate-300 dark:border-transparent" data-filter="game">
+            <p class="text-sm font-medium leading-normal">Games</p>
+        </button>
+    </div>
+    <!-- Projects Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
+        <!-- Card 1 -->
+        <div class="project-card group relative flex flex-col items-stretch justify-start rounded-xl bg-white dark:bg-card-dark shadow-sm dark:shadow-none border border-gray-200 dark:border-card-border overflow-hidden hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(127,19,236,0.25)] hover:-translate-y-2 cursor-pointer" data-category="web ai" data-project="1">
+            <div class="relative w-full aspect-video overflow-hidden bg-gray-100 dark:bg-gray-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="HanapBuh.AI job posting dashboard" style='background-image: url("images/JobPosting.jpg");'></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60"></div>
+                <div class="absolute top-3 right-3 flex gap-2">
+                    <div class="bg-black/50 backdrop-blur-sm rounded-full p-2 text-white hover:text-primary hover:bg-primary/20 transition-all duration-300 cursor-pointer hover:scale-110 active:scale-95" title="View Code" onclick="event.stopPropagation();">
+                        <span class="material-symbols-outlined text-[20px]">code</span>
+                    </div>
+                    <div class="bg-black/50 backdrop-blur-sm rounded-full p-2 text-white hover:text-primary hover:bg-primary/20 transition-all duration-300 cursor-pointer hover:scale-110 active:scale-95" title="Live Demo" onclick="event.stopPropagation();">
+                        <span class="material-symbols-outlined text-[20px]">open_in_new</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col flex-1 p-5 gap-3">
+                <div>
+                    <h3 class="text-xl font-bold leading-tight mb-1 text-slate-900 dark:text-white group-hover:text-primary transition-colors">HanapBuh.AI</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-relaxed line-clamp-2">
+                        Job Board with AI Recommendation of Jobs based on resume analysis and skill matching.
+                    </p>
+                </div>
+                <div class="mt-auto pt-2 flex flex-wrap gap-2">
+                    <span class="px-2.5 py-1 rounded-md bg-gray-100 dark:bg-card-border/50 text-xs font-semibold text-primary hover:bg-primary hover:text-white transition-all duration-300 cursor-default">Laravel</span>
+                    <span class="px-2.5 py-1 rounded-md bg-gray-100 dark:bg-card-border/50 text-xs font-semibold text-gray-600 dark:text-gray-300 hover:bg-primary hover:text-white transition-all duration-300 cursor-default">Python</span>
+                    <span class="px-2.5 py-1 rounded-md bg-gray-100 dark:bg-card-border/50 text-xs font-semibold text-gray-600 dark:text-gray-300 hover:bg-primary hover:text-white transition-all duration-300 cursor-default">AI/NLP</span>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="project-card group relative flex flex-col items-stretch justify-start rounded-xl bg-white dark:bg-card-dark shadow-sm dark:shadow-none border border-gray-200 dark:border-card-border overflow-hidden hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(127,19,236,0.25)] hover:-translate-y-2 cursor-pointer" data-category="ai" data-project="2">
+            <div class="relative w-full aspect-video overflow-hidden bg-gray-100 dark:bg-gray-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="HanapBuh.AI dashboard screenshot" style='background-image: url("images/hanapbuh-ai-screenshot%20-%20Copy.jpg");'></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60"></div>
+                <div class="absolute top-3 right-3 flex gap-2">
+                    <div class="bg-black/50 backdrop-blur-sm rounded-full p-2 text-white hover:text-primary hover:bg-primary/20 transition-all duration-300 cursor-pointer hover:scale-110 active:scale-95" title="View Code" onclick="event.stopPropagation();">
+                        <span class="material-symbols-outlined text-[20px]">code</span>
+                    </div>
+                    <div class="bg-black/50 backdrop-blur-sm rounded-full p-2 text-white hover:text-primary hover:bg-primary/20 transition-all duration-300 cursor-pointer hover:scale-110 active:scale-95" title="Live Demo" onclick="event.stopPropagation();">
+                        <span class="material-symbols-outlined text-[20px]">open_in_new</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col flex-1 p-5 gap-3">
+                <div>
+                    <h3 class="text-xl font-bold leading-tight mb-1 text-slate-900 dark:text-white group-hover:text-primary transition-colors">HanapBuh.AI - AI Job Recommendation</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-relaxed line-clamp-2">
+                        Engineered core functionalities of an AI-driven job-matching system using Python and NLP techniques to analyze resumes and match user skills to relevant job listings.
+                    </p>
+                </div>
+                <div class="mt-auto pt-2 flex flex-wrap gap-2">
+                    <span class="px-2.5 py-1 rounded-md bg-gray-100 dark:bg-card-border/50 text-xs font-semibold text-primary hover:bg-primary hover:text-white transition-all duration-300 cursor-default">Python</span>
+                    <span class="px-2.5 py-1 rounded-md bg-gray-100 dark:bg-card-border/50 text-xs font-semibold text-gray-600 dark:text-gray-300 hover:bg-primary hover:text-white transition-all duration-300 cursor-default">NLP</span>
+                    <span class="px-2.5 py-1 rounded-md bg-gray-100 dark:bg-card-border/50 text-xs font-semibold text-gray-600 dark:text-gray-300 hover:bg-primary hover:text-white transition-all duration-300 cursor-default">AI/ML</span>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="project-card group relative flex flex-col items-stretch justify-start rounded-xl bg-white dark:bg-card-dark shadow-sm dark:shadow-none border border-gray-200 dark:border-card-border overflow-hidden hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(127,19,236,0.25)] hover:-translate-y-2 cursor-pointer" data-category="ai" data-project="3">
+            <div class="relative w-full aspect-video overflow-hidden bg-gray-100 dark:bg-gray-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Abstract neural network visualization with glowing nodes" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD50tiJWp72sBcFZZ2vBk7gew2Me9qRVUUISq5xjiUilPPX0R7446e9Pz29ozyd6I5Ek1BcVG0IdvpiGJ6dn1-pb4xzBtAazJ47xVUdFSjQTGi9wIwji1zka6hlAFVA-2lpvHG9gbliveCm8pPjPkYzh4AHG6rMs3bkk6SswyTIYl1GHx82jPDcJZdjk8gUjLaHy2rhL1ds4nbyh1lQ1ELKIquun1nrejqYetNAtXASwxDFNFTuAWvVLrDx0Tx3PrPQ2ZgnUQu3Tbtb");'></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60"></div>
+                <div class="absolute top-3 right-3 flex gap-2">
+                    <div class="bg-black/50 backdrop-blur-sm rounded-full p-2 text-white hover:text-primary hover:bg-primary/20 transition-all duration-300 cursor-pointer hover:scale-110 active:scale-95" title="View Code" onclick="event.stopPropagation();">
+                        <span class="material-symbols-outlined text-[20px]">code</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col flex-1 p-5 gap-3">
+                <div>
+                    <h3 class="text-xl font-bold leading-tight mb-1 text-slate-900 dark:text-white group-hover:text-primary transition-colors">Brosko</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-relaxed line-clamp-2">
+                        Created an AI tool that highlights correct answers and provides explanations to improve learning and comprehension.
+                    </p>
+                </div>
+                <div class="mt-auto pt-2 flex flex-wrap gap-2">
+                    <span class="px-2.5 py-1 rounded-md bg-gray-100 dark:bg-card-border/50 text-xs font-semibold text-primary hover:bg-primary hover:text-white transition-all duration-300 cursor-default">Python</span>
+                    <span class="px-2.5 py-1 rounded-md bg-gray-100 dark:bg-card-border/50 text-xs font-semibold text-gray-600 dark:text-gray-300 hover:bg-primary hover:text-white transition-all duration-300 cursor-default">AI</span>
+                    <span class="px-2.5 py-1 rounded-md bg-gray-100 dark:bg-card-border/50 text-xs font-semibold text-gray-600 dark:text-gray-300 hover:bg-primary hover:text-white transition-all duration-300 cursor-default">Web</span>
+                </div>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="project-card group relative flex flex-col items-stretch justify-start rounded-xl bg-white dark:bg-card-dark shadow-sm dark:shadow-none border border-gray-200 dark:border-card-border overflow-hidden hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(127,19,236,0.25)] hover:-translate-y-2 cursor-pointer" data-category="game" data-project="4">
+            <div class="relative w-full aspect-video overflow-hidden bg-gray-100 dark:bg-gray-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Taliknows - Educational game platform" style='background-image: url("images/Taliknows.jpg");'></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60"></div>
+                <div class="absolute top-3 right-3 flex gap-2">
+                    <div class="bg-black/50 backdrop-blur-sm rounded-full p-2 text-white hover:text-primary hover:bg-primary/20 transition-all duration-300 cursor-pointer hover:scale-110 active:scale-95" title="View Code" onclick="event.stopPropagation();">
+                        <span class="material-symbols-outlined text-[20px]">code</span>
+                    </div>
+                    <div class="bg-black/50 backdrop-blur-sm rounded-full p-2 text-white hover:text-primary hover:bg-primary/20 transition-all duration-300 cursor-pointer hover:scale-110 active:scale-95" title="Live Demo" onclick="event.stopPropagation();">
+                        <span class="material-symbols-outlined text-[20px]">open_in_new</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col flex-1 p-5 gap-3">
+                <div>
+                    <h3 class="text-xl font-bold leading-tight mb-1 text-slate-900 dark:text-white group-hover:text-primary transition-colors">Taliknows</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-relaxed line-clamp-2">
+                        Developed a game that evaluates users' skills and provides personalized feedback to enhance learning outcomes.
+                    </p>
+                </div>
+                <div class="mt-auto pt-2 flex flex-wrap gap-2">
+                    <span class="px-2.5 py-1 rounded-md bg-gray-100 dark:bg-card-border/50 text-xs font-semibold text-primary hover:bg-primary hover:text-white transition-all duration-300 cursor-default">JavaScript</span>
+                    <span class="px-2.5 py-1 rounded-md bg-gray-100 dark:bg-card-border/50 text-xs font-semibold text-gray-600 dark:text-gray-300 hover:bg-primary hover:text-white transition-all duration-300 cursor-default">Game Dev</span>
+                    <span class="px-2.5 py-1 rounded-md bg-gray-100 dark:bg-card-border/50 text-xs font-semibold text-gray-600 dark:text-gray-300 hover:bg-primary hover:text-white transition-all duration-300 cursor-default">Web</span>
+                </div>
+            </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="project-card group relative flex flex-col items-stretch justify-start rounded-xl bg-white dark:bg-card-dark shadow-sm dark:shadow-none border border-gray-200 dark:border-card-border overflow-hidden hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(127,19,236,0.25)] hover:-translate-y-2 cursor-pointer" data-category="ai web" data-project="5">
+            <div class="relative w-full aspect-video overflow-hidden bg-gray-100 dark:bg-gray-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Cloud computing server room with blue lights" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCPs9SCbljwfG6wrDDyZbuhfZqmBdxq_lcWEhJtTWEW9ttD5rwD0ja-5TExG6sRCSgkt1EDri43P0j0jeQZJfb0X7DKkO3CEPeooDqQvDDOZXTM74XB1RdR9_F7xw3INWG1rs7ipwU_9rJli91Lowb3DZcAKtdJO9XtoyT5U1blYcI7_x0NSJgJOvjMXhqWV8Fjo_LNaTwqGz2g6Q5VrUZaHFwASkEiJdNurHJR_ElK0zziXT0yJwRt_yMfBh40nKV465sEjunWreTf");'></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60"></div>
+                <div class="absolute top-3 right-3 flex gap-2">
+                    <div class="bg-black/50 backdrop-blur-sm rounded-full p-2 text-white hover:text-primary hover:bg-primary/20 transition-all duration-300 cursor-pointer hover:scale-110 active:scale-95" title="View Code" onclick="event.stopPropagation();">
+                        <span class="material-symbols-outlined text-[20px]">code</span>
+                    </div>
+                    <div class="bg-black/50 backdrop-blur-sm rounded-full p-2 text-white hover:text-primary hover:bg-primary/20 transition-all duration-300 cursor-pointer hover:scale-110 active:scale-95" title="Live Demo" onclick="event.stopPropagation();">
+                        <span class="material-symbols-outlined text-[20px]">open_in_new</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col flex-1 p-5 gap-3">
+                <div>
+                    <h3 class="text-xl font-bold leading-tight mb-1 text-slate-900 dark:text-white group-hover:text-primary transition-colors">CEU Chatbot</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-relaxed line-clamp-2">
+                        Designed a chatbot to assist students with academic queries and school processes, providing instant support and information.
+                    </p>
+                </div>
+                <div class="mt-auto pt-2 flex flex-wrap gap-2">
+                    <span class="px-2.5 py-1 rounded-md bg-gray-100 dark:bg-card-border/50 text-xs font-semibold text-primary hover:bg-primary hover:text-white transition-all duration-300 cursor-default">Python</span>
+                    <span class="px-2.5 py-1 rounded-md bg-gray-100 dark:bg-card-border/50 text-xs font-semibold text-gray-600 dark:text-gray-300 hover:bg-primary hover:text-white transition-all duration-300 cursor-default">Chatbot</span>
+                    <span class="px-2.5 py-1 rounded-md bg-gray-100 dark:bg-card-border/50 text-xs font-semibold text-gray-600 dark:text-gray-300 hover:bg-primary hover:text-white transition-all duration-300 cursor-default">NLP</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer / Pagination -->
+    <div class="flex justify-center mt-12 mb-8">
+        <button class="flex items-center gap-2 px-6 py-3 rounded-xl bg-transparent border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 font-bold text-sm hover:scale-105 active:scale-95 hover:shadow-[0_0_20px_rgba(127,19,236,0.4)]">
+            <span>View All Projects</span>
+            <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </button>
+    </div>
+</div>
+
+
+
+

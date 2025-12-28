@@ -1,0 +1,153 @@
+<!-- 
+Portfolio About Section Template
+Designed by Mario John Santiano
+Template: Hero + Bento Grid About Layout
+-->
+<div class="w-full max-w-[1440px] mx-auto">
+    <!-- Hero Section with About Me -->
+    <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-24">
+        <!-- Left Column: Text Content -->
+        <div class="lg:col-span-7 flex flex-col gap-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 w-fit">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                </span>
+                <span class="text-xs font-semibold tracking-wide text-primary uppercase">Open to work</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
+                Hello World. <br/>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400">I'm Mario.</span>
+            </h1>
+            <p class="text-lg text-slate-600 dark:text-slate-300 max-w-2xl leading-relaxed">
+                Hi, I’m Mario John Santiano, a Computer Science student with a strong interest in AI-powered applications, web development, and user-centered design. I enjoy building practical solutions that combine logic, creativity, and real-world impact.            </p>
+            <div class="flex flex-wrap gap-4 pt-4">
+                <a href="https://github.com/supremomj" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-xl font-bold transition-all">
+                    <span class="material-symbols-outlined">code</span>
+                    View GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/mario-john-santiano-3189b32b1/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-transparent border border-gray-300 dark:border-gray-700 hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary text-slate-900 dark:text-white px-6 py-3 rounded-xl font-medium transition-all">
+                    <span class="material-symbols-outlined">work</span>
+                    View LinkedIn
+                </a>
+                <a href="Resume/SantianoCV.pdf" download class="flex items-center gap-2 bg-transparent border border-gray-300 dark:border-gray-700 hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary text-slate-900 dark:text-white px-6 py-3 rounded-xl font-medium transition-all">
+                    <span class="material-symbols-outlined">download</span>
+                    Download Resume
+                </a>
+            </div>
+            <!-- Social Proof / Quick Stats -->
+            <div class="flex gap-8 mt-6 pt-6 border-t border-gray-200 dark:border-[#362348]">
+                <div>
+                    <p class="text-2xl font-bold text-slate-900 dark:text-white">3+</p>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider">Years Coding</p>
+                </div>
+                <div>
+                    <p class="text-2xl font-bold text-slate-900 dark:text-white">7</p>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider">Projects Built</p>
+                </div>
+                <div>
+                    <p class="text-2xl font-bold text-slate-900 dark:text-white">1.50</p>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider">GWA</p>
+                </div>
+            </div>
+        </div>
+        <!-- Right Column: Image -->
+        <div class="lg:col-span-5 relative group flex items-center justify-center">
+            <!-- Decorative Elements - Optimized Purple Glow -->
+            <div class="absolute -inset-3 bg-gradient-to-br from-primary/50 via-purple-500/40 to-primary/30 rounded-2xl blur-2xl opacity-50 group-hover:opacity-70 transition-all duration-500 -z-10"></div>
+            <div class="absolute -inset-1 bg-gradient-to-tr from-primary/20 to-transparent rounded-2xl blur-md opacity-40 -z-10"></div>
+            <div class="relative w-full max-w-xs lg:max-w-sm aspect-[3/4] rounded-2xl overflow-hidden border-2 border-gray-300 dark:border-[#362348] bg-white dark:bg-[#120a19] shadow-[0_20px_50px_-12px_rgba(127,19,236,0.25)] dark:shadow-[0_20px_50px_-12px_rgba(127,19,236,0.15)]">
+                <!-- Place your profile image in the images/ folder and name it profile.jpg (or update the filename below) -->
+                <img src="images/profile.jpg" alt="Portrait of Mario John" class="w-full h-full object-cover object-center" />
+            </div>
+        </div>
+    </section>
+    <!-- Bento Grid Layout for Details -->
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+        <!-- Technical Skills Card -->
+        <div class="lg:col-span-2 bg-white dark:bg-[#251830] rounded-2xl p-6 md:p-8 border border-gray-100 dark:border-[#362348] shadow-sm">
+            <div class="flex items-center gap-3 mb-6">
+                <span class="material-symbols-outlined text-primary">integration_instructions</span>
+                <h2 class="text-xl font-bold">Technical Arsenal</h2>
+            </div>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Languages</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 rounded-lg bg-gray-100 dark:bg-[#362348] text-sm font-medium hover:bg-primary hover:text-white transition-colors cursor-default">Python</span>
+                        <span class="px-4 py-2 rounded-lg bg-gray-100 dark:bg-[#362348] text-sm font-medium hover:bg-primary hover:text-white transition-colors cursor-default">C#</span>
+                        <span class="px-4 py-2 rounded-lg bg-gray-100 dark:bg-[#362348] text-sm font-medium hover:bg-primary hover:text-white transition-colors cursor-default">PHP</span>
+                        <span class="px-4 py-2 rounded-lg bg-gray-100 dark:bg-[#362348] text-sm font-medium hover:bg-primary hover:text-white transition-colors cursor-default">JavaScript</span>
+                        <span class="px-4 py-2 rounded-lg bg-gray-100 dark:bg-[#362348] text-sm font-medium hover:bg-primary hover:text-white transition-colors cursor-default">SQL</span>
+                        <span class="px-4 py-2 rounded-lg bg-gray-100 dark:bg-[#362348] text-sm font-medium hover:bg-primary hover:text-white transition-colors cursor-default">HTML</span>
+                        <span class="px-4 py-2 rounded-lg bg-gray-100 dark:bg-[#362348] text-sm font-medium hover:bg-primary hover:text-white transition-colors cursor-default">CSS</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Frameworks & Tools</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 rounded-lg bg-gray-100 dark:bg-[#362348] text-sm font-medium hover:bg-primary hover:text-white transition-colors cursor-default">React.js</span>
+                        <span class="px-4 py-2 rounded-lg bg-gray-100 dark:bg-[#362348] text-sm font-medium hover:bg-primary hover:text-white transition-colors cursor-default">Node.js</span>
+                        <span class="px-4 py-2 rounded-lg bg-gray-100 dark:bg-[#362348] text-sm font-medium hover:bg-primary hover:text-white transition-colors cursor-default">Docker</span>
+                        <span class="px-4 py-2 rounded-lg bg-gray-100 dark:bg-[#362348] text-sm font-medium hover:bg-primary hover:text-white transition-colors cursor-default">Laravel</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Soft Skills & Interests -->
+        <div class="bg-white dark:bg-[#251830] rounded-2xl p-6 md:p-8 border border-gray-100 dark:border-[#362348] shadow-sm flex flex-col justify-between">
+            <div>
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="material-symbols-outlined text-primary">psychology</span>
+                    <h2 class="text-xl font-bold">Beyond Code</h2>
+                </div>
+                <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
+                    While I love the logic of code, I believe the best software is built with empathy and collaboration. I thrive in team environments and enjoy mentoring junior students.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3">
+                        <div class="size-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined text-sm">groups</span>
+                        </div>
+                        <span class="text-sm font-medium">Agile Methodology</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <div class="size-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined text-sm">lightbulb</span>
+                        </div>
+                        <span class="text-sm font-medium">Problem Solving</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <div class="size-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined text-sm">record_voice_over</span>
+                        </div>
+                        <span class="text-sm font-medium">Technical Writing</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Education Journey -->
+        <div class="bg-white dark:bg-[#251830] rounded-2xl p-6 md:p-8 border border-gray-100 dark:border-[#362348] shadow-sm">
+            <div class="flex items-center gap-3 mb-6">
+                <span class="material-symbols-outlined text-primary">history_edu</span>
+                <h2 class="text-xl font-bold">Education</h2>
+            </div>
+            <div class="relative pl-4 border-l-2 border-gray-200 dark:border-[#362348] space-y-8">
+                <div class="relative">
+                    <div class="absolute -left-[21px] top-1 h-3 w-3 rounded-full bg-primary ring-4 ring-white dark:ring-[#251830]"></div>
+                    <h3 class="text-base font-bold">BS in Computer Science</h3>
+                    <p class="text-xs text-primary mb-1">2022 - Present</p>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">Centro Escolar University</p>
+                </div>
+                <div class="relative">
+                    <div class="absolute -left-[21px] top-1 h-3 w-3 rounded-full bg-gray-400 dark:bg-gray-600 ring-4 ring-white dark:ring-[#251830]"></div>
+                    <h3 class="text-base font-bold">Senior High School Diploma</h3>
+                    <p class="text-xs text-primary mb-1">2019 - 2021</p>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">Macario B. Asistio Senior High School Unit I</p>
+                    <p class="text-xs text-slate-500 mt-2">TechVoc Track - ICT Computer Programming</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+

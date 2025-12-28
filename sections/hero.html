@@ -1,0 +1,107 @@
+<!-- 
+Portfolio Hero Section Template
+Designed by Mario John Santiano
+Template: Modern Hero with Glass Card & Project Showcase
+-->
+<!-- Background Elements -->
+<div class="absolute top-0 right-0 -z-10 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] opacity-40 translate-x-1/3 -translate-y-1/4"></div>
+<div class="absolute bottom-0 left-0 -z-10 w-[400px] h-[400px] bg-primary/10 rounded-full blur-[100px] opacity-30 -translate-x-1/3 translate-y-1/4"></div>
+<div class="layout-container flex grow flex-col justify-center">
+    <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center items-center py-10">
+        <div class="layout-content-container flex flex-col w-full max-w-[1280px]">
+            <div class="@container">
+                <div class="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
+                    <!-- Left Content: Text & Actions -->
+                    <div class="flex flex-col gap-6 lg:w-1/2 items-start text-left z-10">
+                        <!-- Intro Tag -->
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-mono font-medium">
+                            <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                            <span>Hello, World!</span>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <p class="text-gray-600 dark:text-gray-400 font-mono text-lg">I'm Mario John</p>
+                            <h1 class="text-slate-900 dark:text-white text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight">
+                                Building the <br/>
+                                <span class="text-primary">Digital Future</span>
+                            </h1>
+                            <h2 class="text-slate-700 dark:text-gray-300 text-lg md:text-xl font-light leading-relaxed max-w-lg mt-4">
+                                I build AI-powered and web-based applications that turn ideas into practical, user-focused solutions. Passionate about learning, problem-solving, and creating technology that makes an impact.                            </h2>
+                        </div>
+                        <!-- CTA Buttons -->
+                        <div class="flex flex-wrap gap-4 mt-4 w-full sm:w-auto">
+                            <button class="group flex items-center justify-center gap-2 rounded-lg h-12 px-8 bg-primary hover:bg-primary-dark transition-all text-white text-base font-bold shadow-[0_0_20px_-5px_rgba(127,19,236,0.5)] hover:shadow-[0_0_30px_-5px_rgba(127,19,236,0.7)] hover:-translate-y-0.5" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+                                <span>View My Work</span>
+                                <span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                            </button>
+                            <a class="flex items-center justify-center gap-2 rounded-lg h-12 px-8 bg-transparent border border-slate-300 dark:border-[#362348] hover:border-primary/50 hover:bg-primary/10 dark:hover:bg-[#362348]/30 transition-all text-slate-900 dark:text-white text-base font-bold" href="Resume/SantianoCV.pdf" download>
+                                <span class="material-symbols-outlined text-[20px]">download</span>
+                                <span>Download Resume</span>
+                            </a>
+                        </div>
+                        <!-- Social Proof / Tech Stack / Links -->
+                        <div class="mt-8 pt-8 border-t border-slate-200 dark:border-[#362348] w-full">
+                            <p class="text-xs font-mono text-slate-600 dark:text-gray-500 mb-4 uppercase tracking-widest">Connect with me</p>
+                            <div class="flex gap-4">
+                                <a class="group flex items-center justify-center size-10 rounded-full bg-slate-100 dark:bg-[#2d1b3e] border border-slate-200 dark:border-[#362348] hover:border-primary hover:bg-primary/20 transition-all" href="#" aria-label="GitHub">
+                                    <span class="material-symbols-outlined text-slate-700 dark:text-gray-400 group-hover:text-primary transition-colors text-[20px]">code</span>
+                                </a>
+                                <a class="group flex items-center justify-center size-10 rounded-full bg-slate-100 dark:bg-[#2d1b3e] border border-slate-200 dark:border-[#362348] hover:border-primary hover:bg-primary/20 transition-all" href="#" aria-label="LinkedIn">
+                                    <span class="material-symbols-outlined text-slate-700 dark:text-gray-400 group-hover:text-primary transition-colors text-[20px]">work</span>
+                                </a>
+                                <a class="group flex items-center justify-center size-10 rounded-full bg-slate-100 dark:bg-[#2d1b3e] border border-slate-200 dark:border-[#362348] hover:border-primary hover:bg-primary/20 transition-all" href="#contact" aria-label="Email">
+                                    <span class="material-symbols-outlined text-slate-700 dark:text-gray-400 group-hover:text-primary transition-colors text-[20px]">mail</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right Content: Visual -->
+                    <div class="w-full lg:w-1/2 flex justify-center items-center relative">
+                        <!-- Abstract glowing background for the image -->
+                        <div class="absolute inset-0 bg-gradient-to-tr from-primary/30 to-transparent rounded-full blur-[80px] scale-75"></div>
+                        <!-- Card Container with Glass effect -->
+                        <div class="relative z-10 w-full max-w-md aspect-square bg-[#2d1b3e]/40 backdrop-blur-sm border border-white/10 rounded-2xl p-4 shadow-2xl flex flex-col overflow-visible">
+                            <!-- Fake Window Header -->
+                            <div class="flex items-center gap-2 mb-4 px-2">
+                                <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+                            </div>
+                            <!-- Image content -->
+                            <div class="relative w-full h-full rounded-xl overflow-hidden bg-background-dark border border-white/5 group">
+                                <div class="absolute inset-0 bg-gradient-to-b from-transparent to-background-dark/80 z-10"></div>
+                                <div class="absolute bottom-6 left-6 right-6 z-20">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-primary text-white">LATEST PROJECT</span>
+                                        <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/10 text-white">AI + LARAVEL</span>
+                                    </div>
+                                    <p class="text-white font-bold text-lg">HanapBuh.AI</p>
+                                </div>
+                                <img alt="HanapBuh.AI - AI-powered job finder platform with resume analysis and job matching features" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="images/hanapbuh-ai-screenshot.jpg"/>
+                            </div>
+                            <!-- Floating Code Snippet decoration -->
+                            <div class="absolute bottom-2 right-2 bg-[#1a1122] border border-[#362348] p-3 rounded-lg shadow-xl backdrop-blur-md z-30 hidden sm:block" style="max-width: 180px; animation: subtle-bounce 3s ease-in-out infinite;">
+                                <div class="flex flex-col gap-1">
+                                    <div class="h-2 w-20 bg-primary/40 rounded"></div>
+                                    <div class="h-2 w-14 bg-gray-700 rounded"></div>
+                                    <div class="h-2 w-16 bg-gray-700 rounded"></div>
+                                </div>
+                                <div class="mt-2 flex items-center gap-2">
+                                    <div class="size-5 rounded-full bg-green-500/20 flex items-center justify-center text-green-400">
+                                        <span class="material-symbols-outlined text-[12px]">check</span>
+                                    </div>
+                                    <span class="text-xs text-green-400 font-mono">Compiled successfully</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce opacity-50 hover:opacity-100 transition-opacity cursor-pointer" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+    <span class="text-xs text-gray-400 font-mono uppercase tracking-widest">Scroll</span>
+    <span class="material-symbols-outlined text-white">keyboard_arrow_down</span>
+</div>
+
