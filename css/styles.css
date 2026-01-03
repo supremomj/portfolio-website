@@ -126,6 +126,35 @@ html {
     outline-offset: 4px;
 }
 
+/* Project Modal Styles */
+#project-modal {
+    animation: fadeIn 0.3s ease-out;
+}
+
+#project-modal .relative {
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 /* Enhanced hover effects for tech tags */
 .project-card .px-2\\.5:hover {
     transform: translateY(-2px);
@@ -135,5 +164,99 @@ html {
 .project-card:hover img,
 .project-card:hover [style*="background-image"] {
     transform: scale(1.1) !important;
+}
+
+/* ===== SEASONAL EFFECTS ===== */
+
+/* Snowflake animation */
+@keyframes snowfall {
+    0% {
+        transform: translateY(-10vh) translateX(0);
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) translateX(100px);
+        opacity: 0;
+    }
+}
+
+@keyframes snowfall-left {
+    0% {
+        transform: translateY(-10vh) translateX(0);
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) translateX(-100px);
+        opacity: 0;
+    }
+}
+
+/* Snowflake style */
+.snowflake {
+    position: fixed;
+    top: -10vh;
+    z-index: 999;
+    color: #ffffff;
+    font-size: 1.5em;
+    opacity: 0.8;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    pointer-events: none;
+    user-select: none;
+    will-change: transform;
+}
+
+.snowflake.animate-snowfall {
+    animation: snowfall linear forwards;
+}
+
+.snowflake.animate-snowfall-left {
+    animation: snowfall-left linear forwards;
+}
+
+/* Fireworks animation */
+@keyframes fireworks-burst {
+    0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(var(--tx), var(--ty)) scale(0);
+        opacity: 0;
+    }
+}
+
+.firework {
+    position: fixed;
+    z-index: 998;
+    pointer-events: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: fireworks-burst 1s ease-out forwards;
+}
+
+/* Pumpkin animation (Halloween) */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+}
+
+.seasonal-decoration {
+    position: fixed;
+    font-size: 2em;
+    opacity: 0.6;
+    animation: float 4s ease-in-out infinite;
+    z-index: 10;
+    pointer-events: none;
 }
 
