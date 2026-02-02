@@ -1,3 +1,43 @@
+// Lazy Loading for Images
+function initLazyLoading() {
+    const lazyImages = document.querySelectorAll('.lazyload');
+    
+    if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    
+                    if (img.tagName === 'IMG') {
+                        img.src = img.dataset.src;
+                        img.classList.remove('lazyload');
+                    } else if (img.style.backgroundImage) {
+                        const bgUrl = img.dataset.bg;
+                        if (bgUrl) {
+                            img.style.backgroundImage = `url("${bgUrl}")`;
+                            img.classList.remove('lazyload');
+                        }
+                    }
+                    
+                    observer.unobserve(img);
+                }
+            });
+        });
+        
+        lazyImages.forEach(img => imageObserver.observe(img));
+    } else {
+        // Fallback for older browsers
+        lazyImages.forEach(img => {
+            if (img.tagName === 'IMG') {
+                img.src = img.dataset.src;
+            } else if (img.dataset.bg) {
+                img.style.backgroundImage = `url("${img.dataset.bg}")`;
+            }
+            img.classList.remove('lazyload');
+        });
+    }
+}
+
 // Initialize dark mode on page load
 function initDarkMode() {
     const isDark = localStorage.getItem('darkMode');
@@ -206,6 +246,9 @@ function initSummerEffect() {
 
 // Mobile menu toggle
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize lazy loading
+    initLazyLoading();
+    
     // Initialize dark mode
     initDarkMode();
     
@@ -250,6 +293,7 @@ document.addEventListener('DOMContentLoaded', function() {
         initProjectFilters();
         initProjectAnimations();
         initProjectModals();
+        initLazyLoading(); // Re-initialize lazy loading after sections load
     }, 500);
 });
 
@@ -273,6 +317,8 @@ async function loadSections() {
                 const container = document.getElementById(section.id);
                 if (container) {
                     container.innerHTML = html;
+                    // Re-initialize lazy loading for this section
+                    setTimeout(() => initLazyLoading(), 100);
                 }
             } else {
                 console.warn(`Failed to load ${section.file}. Make sure you're running a local server.`);
