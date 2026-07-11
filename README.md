@@ -24,7 +24,8 @@ A modern, responsive portfolio website built with HTML, Tailwind CSS (via CDN), 
 │   ├── hero.html       # Hero section
 │   ├── about.html      # About section
 │   ├── projects.html   # Projects showcase
-│   ├── skills.html     # Skills & technologies
+│   ├── experience.html # Professional experience timeline
+│   ├── certifications.html # Credentials and achievements
 │   └── contact.html    # Contact form
 ├── images/            # Image assets
 │   └── profile.jpg     # Profile picture
@@ -104,7 +105,8 @@ Each section is a separate HTML file that gets loaded dynamically:
 - `sections/hero.html` - Landing section
 - `sections/about.html` - About me section
 - `sections/projects.html` - Projects showcase
-- `sections/skills.html` - Skills and technologies
+- `sections/experience.html` - Work experience timeline
+- `sections/certifications.html` - Credentials and achievements
 - `sections/contact.html` - Contact form
 
 ## Browser Support
